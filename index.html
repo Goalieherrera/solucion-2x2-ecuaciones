@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2x2 Equation Solver</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-200 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white shadow-xl rounded-2xl p-6 w-full max-w-lg space-y-6">
+    <h1 class="text-3xl font-bold text-center text-indigo-800">2x2 Equation Solver</h1>
+    <div class="grid grid-cols-4 gap-2 items-center text-center">
+      <input id="a1" type="number" class="input" placeholder="a₁" />
+      <span class="text-xl">x +</span>
+      <input id="b1" type="number" class="input" placeholder="b₁" />
+      <span class="text-xl">y =</span>
+      <input id="c1" type="number" class="input col-span-4" placeholder="c₁" />
+
+      <input id="a2" type="number" class="input" placeholder="a₂" />
+      <span class="text-xl">x +</span>
+      <input id="b2" type="number" class="input" placeholder="b₂" />
+      <span class="text-xl">y =</span>
+      <input id="c2" type="number" class="input col-span-4" placeholder="c₂" />
+    </div>
+
+    <button onclick="solveEquations()" class="w-full bg-indigo-600 text-white font-bold py-2 rounded-2xl hover:bg-indigo-700 transition">Solve</button>
+
+    <div id="result" class="text-center text-lg font-medium text-gray-800"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
